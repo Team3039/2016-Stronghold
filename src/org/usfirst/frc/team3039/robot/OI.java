@@ -84,7 +84,7 @@ public class OI {
 		ButtonL2.whileHeld(new RunShooter(.6));
 		ButtonR1.toggleWhenPressed(new RaiseShooter());
 		ButtonL1.whileHeld(new RunShooter(.95));
-		ButtonSquare.whenPressed(new StartPickup());
+		ButtonCircle.whenPressed(new StartPickup());
 		ButtonR2.toggleWhenPressed(new ToggleTomahawks());
 		ButtonStart.toggleWhenPressed(new Brake());
 		ButtonX.whileHeld(new ShootBoulder());

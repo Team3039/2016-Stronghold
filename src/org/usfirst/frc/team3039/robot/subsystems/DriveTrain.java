@@ -73,7 +73,7 @@ public class DriveTrain extends Subsystem {
 	}
     
 	public void driveArcade(PS4Gamepad gp){
-    	driveArcade.arcadeDrive(-gp.getLeftYAxis()*.8, gp.getRightXAxis()*.9); 
+    	driveArcade.arcadeDrive(-gp.getLeftYAxis()*.95, gp.getRightXAxis()*.9); 
 		//driveArcade.tankDrive(-gp.getLeftYAxis()*.8, -gp.getRightYAxis()*.8);
     }
     
