@@ -11,7 +11,7 @@ import frc.robot.RobotMap;
 /**
  *
  */
-public class SideShooter extends Subsystem {
+public class Shooter extends Subsystem {
     private WPI_TalonSRX leftShooterMotor;
     private WPI_TalonSRX rightShooterMotor;
     private WPI_TalonSRX pickupMotor;
@@ -29,7 +29,7 @@ public class SideShooter extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
     
-    public SideShooter() {
+    public Shooter() {
     	leftShooterMotor = new WPI_TalonSRX(RobotMap.PWM_Left_Shooting_Motor);
     	rightShooterMotor = new WPI_TalonSRX(RobotMap.PWM_Right_Shooting_Motor);
     	tomahawkCylinders = new Solenoid(RobotMap.SOL_SS_TOMAHAWKS);

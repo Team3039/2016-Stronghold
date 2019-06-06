@@ -19,7 +19,7 @@ double speed;
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.sideshooter.runShooter(speed);
+    	Robot.shooter.runShooter(speed);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -29,7 +29,7 @@ double speed;
 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.sideshooter.stopShooter();
+    	Robot.shooter.stopShooter();
     }
 
     // Called when another command which requires one or more of the same

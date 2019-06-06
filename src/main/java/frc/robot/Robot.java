@@ -13,7 +13,7 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.subsystems.DriveTrain;
-import frc.robot.subsystems.SideShooter;
+import frc.robot.subsystems.Shooter;
 /**
  * The VM is configured to automatically run this class, and to call the
  * functions corresponding to each mode, as described in the IterativeRobot
@@ -32,7 +32,7 @@ public class Robot extends TimedRobot {
 	
 	public static OI oi;
     public static DriveTrain drivetrain; //initialize drive train
-    public static SideShooter sideshooter; //initialize side shooter
+    public static Shooter shooter; //initialize side shooter
 	public static double Hippo;
    // public static PIDControl pidcontrol;
     Command autonomousCommand;
@@ -57,7 +57,7 @@ public class Robot extends TimedRobot {
 		//cameraserver.setQuality(50);
         // instantiate the command used for the autonomous period
         drivetrain = new DriveTrain();
-        sideshooter = new SideShooter();
+        shooter = new Shooter();
        // pidcontrol = new PIDControl();
         //CameraServer server1 = CameraServer.getInstance();
     	//server1.setQuality(50);

@@ -19,8 +19,8 @@ public class ShootBoulder extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.sideshooter.shootBoulder();
-    	Robot.sideshooter.startPickup();
+    	Robot.shooter.shootBoulder();
+    	Robot.shooter.startPickup();
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -30,8 +30,8 @@ public class ShootBoulder extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.sideshooter.stopShooting();
-    	Robot.sideshooter.stopPickup();
+    	Robot.shooter.stopShooting();
+    	Robot.shooter.stopPickup();
     }
 
     // Called when another command which requires one or more of the same

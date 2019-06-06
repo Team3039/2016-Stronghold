@@ -10,7 +10,7 @@ public class RaiseTomahawks extends Command {
     public RaiseTomahawks() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	requires(Robot.sideshooter);
+    	requires(Robot.shooter);
     }
 
     // Called just before this Command runs the first time
@@ -19,7 +19,7 @@ public class RaiseTomahawks extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.sideshooter.raiseTomahawks();
+    	Robot.shooter.raiseTomahawks();
     }
 
     // Make this return true when this Command no longer needs to run execute()
